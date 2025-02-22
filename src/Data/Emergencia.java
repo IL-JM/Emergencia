@@ -23,6 +23,7 @@ public class Emergencia implements Base {
         this.idEmergencia = idEmergencia;
         this.tipoEmergencia = tipoEmergencia;
         this.nivelPrioridad = nivelPrioridad;
+        
     }
 
 
