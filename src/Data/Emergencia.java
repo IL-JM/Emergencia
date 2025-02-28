@@ -18,7 +18,7 @@ public class Emergencia implements Base {
     public Emergencia() {
     }
 
-    public Emergencia(int tiempoAtencion, int idEmergencia, String tipoEmergencia, int nivelPrioridad) {
+    public Emergencia(String tipoEmergencia, int tiempoAtencion, int nivelPrioridad1) {
         this.tiempoAtencion = tiempoAtencion;
         this.idEmergencia = idEmergencia;
         this.tipoEmergencia = tipoEmergencia;
@@ -110,7 +110,7 @@ public class Emergencia implements Base {
 
     @Override
     public Base copy() {
-        return new Emergencia(tiempoAtencion, idEmergencia, tipoEmergencia, nivelPrioridad);
+        return new Emergencia(tipoEmergencia, tiempoAtencion, nivelPrioridad);
     }
 
     
